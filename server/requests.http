@@ -1,0 +1,5 @@
+# Requests file for testing routes with REST Client by Huachao Mao
+# You can also just `CURL http://localhost:3000/api/locations` from the command line
+
+# GET request for all locations
+GET http://localhost:3000/api/locations
