@@ -8,20 +8,18 @@ export const Aside = () => {
   }
 
   return (
-    <aside className="bg-red-500 min-w-40">
-      <select
-        name="selectedLocation"
-        id="selectedLocation"
-        onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
-          locationsStore.setSelectedLocation(e.target.value || "")
-        }
-      >
-        {locationsStore.locations.map((location) => (
-          <option value={location.name} key={location.name}>
-            {location.name}
-          </option>
-        ))}
-      </select>
-    </aside>
+    <select
+      name="selectedLocation"
+      id="selectedLocation"
+      onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+        locationsStore.setSelectedLocation(e.target.value || "")
+      }
+    >
+      {locationsStore.locations.map((location) => (
+        <option value={location.name} key={location.name}>
+          {location.name}
+        </option>
+      ))}
+    </select>
   );
 };
