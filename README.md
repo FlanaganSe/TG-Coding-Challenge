@@ -22,7 +22,8 @@ Bonuses
 
 #### Resources:
 
--
+- Golf Player SVG ([Sports Line Icons on Reshot](https://www.reshot.com/free-svg-icons/item/golf-player-BTSQDUZXYH/))
+- SVG to TSX ([React-SVGR](https://react-svgr.com/playground/))
 
 # Front-end Developer coding challenge
 
