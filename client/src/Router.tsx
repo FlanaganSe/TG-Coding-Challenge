@@ -13,7 +13,7 @@ export const Router = () => {
   return (
     <div className="flex flex-col min-h-screen p-4">
       <Header />
-      <main className="flex flex-1 overflow-auto">
+      <main className="flex flex-1 overflow-auto flex-col md:flex-row">
         <Aside />
         <HomePage />
       </main>
