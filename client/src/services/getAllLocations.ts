@@ -1,5 +1,6 @@
 import axios, { AxiosInstance } from "axios";
 import { axiosConfig } from "../utils/axiosConfig";
+import { ILocation } from "../types/ILocation";
 
 const api: AxiosInstance = axios.create(axiosConfig);
 
@@ -7,7 +8,7 @@ export const getAllLocations = async () => {
   try {
     const { data } = await api.get("/locations");
     if (data.status === "success") {
-      return data.response;
+      return data.response as ILocation[];
     } else {
       throw new Error(`Error fetching locations with status ${data.status}`);
     }
