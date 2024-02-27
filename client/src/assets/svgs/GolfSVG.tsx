@@ -6,8 +6,8 @@ export const GolfSVGLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={props.width}
-    height={props.height}
+    width={props.width || 50}
+    height={props.height || 50}
     style={{
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision",
