@@ -11,10 +11,12 @@ import { Aside } from "./components/Aside";
 */
 export const Router = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen p-4">
       <Header />
-      <HomePage />
-      <Aside />
+      <div className="flex flex-1 overflow-auto">
+        <Aside />
+        <HomePage />
+      </div>
       <Footer />
     </div>
   );
