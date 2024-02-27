@@ -11,7 +11,7 @@ import { Aside } from "./components/Aside";
 */
 export const Router = () => {
   return (
-    <div className="flex flex-col min-h-screen p-4">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex flex-1 overflow-hidden flex-col md:flex-row">
         <Aside />
