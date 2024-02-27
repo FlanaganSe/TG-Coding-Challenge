@@ -6,7 +6,7 @@ interface LocationState {
   locations: ILocation[];
   selectedLocation: ILocation;
   getLocations: () => void;
-  setSelectedLocation: (selectedLocationName: string) => void;
+  setSelectedLocation: (selectedLocationId: number) => void;
 }
 
 export const useLocations = create<LocationState>((set) => ({
@@ -22,11 +22,11 @@ export const useLocations = create<LocationState>((set) => ({
       set({ selectedLocation: {} as ILocation });
     }
   },
-  setSelectedLocation: (selectedLocationName: string) => {
+  setSelectedLocation: (selectedLocationId: number) => {
     set((state) => ({
       selectedLocation:
         state.locations.find(
-          (location) => location.name === selectedLocationName
+          (location) => location.site_id === selectedLocationId
         ) || ({} as ILocation),
     }));
   },
