@@ -26,6 +26,7 @@ export const useLocations = create<LocationState>((set) => ({
     try {
       const locationsRes = await getAllLocations();
       set({ locations: locationsRes });
+      // Defaults selectedLocation to first returned location
       set({ selectedLocation: locationsRes[0] });
     } catch (err) {
       set({ locations: [] });
