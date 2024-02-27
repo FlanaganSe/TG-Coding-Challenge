@@ -9,9 +9,5 @@ export const HomePage = () => {
     getLocations();
   }, [getLocations]);
 
-  return (
-    <div className="bg-orange-500 flex-grow">
-      <HomeContent />
-    </div>
-  );
+  return <HomeContent />;
 };
