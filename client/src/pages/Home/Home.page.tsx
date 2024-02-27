@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ILocation } from "../../types/ILocation";
+import { HomeContent } from "./components/HomeContent";
 
 const MOCKED_DATA = [
   {
@@ -41,7 +42,7 @@ export const HomePage = () => {
 
   return (
     <div className="bg-orange-500 flex-grow">
-      <div>{JSON.stringify(locations)}</div>
+      <HomeContent location={locations ? locations[0] : undefined} />
     </div>
   );
 };
