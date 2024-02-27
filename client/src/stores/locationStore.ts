@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { ILocation } from "../types/ILocation";
-import { getAllLocations } from "../services/getAllLocations";
+import { getAllLocations } from "../services/locations";
 
 interface LocationState {
   locations: ILocation[];
