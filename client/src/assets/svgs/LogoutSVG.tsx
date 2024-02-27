@@ -1,5 +1,7 @@
 import { SVGProps } from "react";
 
+// Source for svg: https://feathericons.com/
+// Source for svg to react: https://react-svgr.com/playground
 export const LogoutSVG = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

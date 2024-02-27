@@ -5,6 +5,11 @@ export const HomeContent = () => {
 
   if (!name) return <h1>No selected location...</h1>;
 
+  /*
+   * The features object could be changed to a list with Object.entries()
+   * and mapped over to generate the list items but it's typically best to
+   * avoid changing data structures in the client...
+   */
   const { amenities, virtual_tour_link, floors } = features;
 
   return (
@@ -17,10 +22,8 @@ export const HomeContent = () => {
         </div>
         <div className="flex-1">
           <p>Features:</p>
-          {/* The features object could changed to a list with Object.entries()
-          and mapped over to generate the list items but it's typically best to
-           avoid changingdata structures in the client */}
           <ul>
+            {/* Turn the array into a string and replace underlines with spaces */}
             {amenities && (
               <li>Amenities: {amenities.join(", ").replaceAll("_", " ")}</li>
             )}

@@ -4,6 +4,13 @@ import { ILocation } from "../types/ILocation";
 
 const api: AxiosInstance = axios.create(axiosConfig);
 
+/*
+  GET /locations
+  Params: 
+  Response: ILocation[] | Error 
+
+  Currently no error typing as it's dependent on server side implementation.
+*/
 export const getAllLocations = async () => {
   try {
     const { data } = await api.get("/locations");

@@ -18,6 +18,7 @@ export const Router = () => {
           <Aside />
         </aside>
         <main>
+          {/* This could be a slot with different routes... */}
           <HomePage />
         </main>
       </div>
