@@ -3,16 +3,11 @@ import { HomeContent } from "./components/HomeContent";
 import { useLocations } from "../../stores/locationStore";
 
 export const HomePage = () => {
-  const locationsStore = useLocations();
+  const { getLocations } = useLocations();
 
   useEffect(() => {
-    /*
-      Note: This only attempts getLocations() a single time.
-      No retries are attempted from the client. 
-    */
-    if (locationsStore.wasLocationsRequested) return;
-    locationsStore.getLocations();
-  }, [locationsStore]);
+    getLocations();
+  }, [getLocations]);
 
   return (
     <div className="bg-orange-500 flex-grow">

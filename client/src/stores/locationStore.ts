@@ -3,7 +3,6 @@ import { ILocation } from "../types/ILocation";
 import { getAllLocations } from "../services/getAllLocations";
 
 interface LocationState {
-  wasLocationsRequested: boolean;
   locations: ILocation[];
   selectedLocation: ILocation;
   getLocations: () => void;
@@ -13,10 +12,7 @@ interface LocationState {
 export const useLocations = create<LocationState>((set) => ({
   locations: [],
   selectedLocation: {} as ILocation,
-  wasLocationsRequested: false,
   getLocations: async () => {
-    set({ wasLocationsRequested: true });
-
     try {
       const locationsRes = await getAllLocations();
       set({ locations: locationsRes });
