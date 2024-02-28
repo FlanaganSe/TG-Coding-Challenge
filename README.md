@@ -1,75 +1,43 @@
 # FE Coding Challenge
 
-#### Planning & Requirements:
+A FE web app built with React, Typescript, and one expressJs route
 
-General Notes:
+#### Running the server:
 
-- Use any framework
-- Responsive UI using pre/post processors
-- Focus on code reusability & scalability
+```zsh
+cd client
+npm i
+npm run serve
+```
 
-Challenge / Todos
+#### Running the client:
 
-- Create a page with a drop down list of locations. Display details of selected location (image, name, other data)
-- Start express server by running `npm run serve`
-- fetch location data at `localhost:3000/locations`
+Note, will fail to fetch data if server is not running on port 3000.
 
-Bonuses
+```zsh
+cd client
+npm i
+npm run dev
+```
 
-- Unit testing
-- State management
-- Linting
+#### Libraries used:
 
-#### Resources:
+- Vite - For bootstrapping build tooling and development server
+- Axios - For fetching api requests from the server
+- Zustand - Global state management library (Implementation of this was overkill but the setup and strategy may be better for scaling)
+- eslint - Code linting
+- Prettier - Code reformatting
+- Vitest - Unit testing (needs to be expanded upon, more on this below)
+- TailwindCSS - CSS framework
+- Typescript - Type checking
+
+#### Extraneous Resources:
 
 - Golf Player SVG ([Sports Line Icons on Reshot](https://www.reshot.com/free-svg-icons/item/golf-player-BTSQDUZXYH/))
 - SVG to TSX ([React-SVGR](https://react-svgr.com/playground/))
 
-# Front-end Developer coding challenge
+#### Showcase
 
-The goal of this coding challenge is you assess your front end developement skills (UI, Javascript, HTML, and CSS). You may design this layout in anyway you want but please be creative and add styling.
+![](docs/desktop-complete.png)
 
-## Instructions
-
-1. Clone this repo
-2. Create a new branch, or fork of this repo
-3. When finished create a Pull request with set-up instructions and any explanations for your solution
-
-## Requirements
-
-- Use any framework of your choice (React, Vue, etc..)
-- The app must run
-- The app must have UI (part of this challenge is to see your HTML and CSS skills, so be creative as you want!)
-- You should use a CSS preprocessor or postprocessor, when you use CSS
-- It must be responsive in any way of your choosing
-
-## Challenge
-
-This will be a page that has a drop down list of top golf locations and the page will display details of a location when selected.
-
-- Start up express server that is set up and available for you to use by running
-
-  `NPM RUN SERVE`
-
-- Use any javascirpt or framework you would like to fetch the location data at:
-
-  `localhost:3000/locations`
-
-  \*Please note: The server will run on port 3000, you will need to run an additional script to start your app in whatever framework you choose.
-
-- Use the response that comes back from this request to populate the drop down list
-- When a location is clicked in the dropdown then populate the page with the image, name of venue and any other data you would like.
-
-## Bonus Points
-
-- Unit tests for Javascript
-- Simple state management
-- Add some sort of linting for code quality
-
-## Helpful Hints
-
-- Think about code re-use and scalability of the application for future features
-
-We will discuss your implementation for this challenge on the interview so please be prepared to explain your solution and talk about enhancements that could be made in the future.
-
-Good luck, and have fun!
+![](docs/mobile-complete.png)
