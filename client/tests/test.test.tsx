@@ -1,5 +1,5 @@
 describe("test", () => {
-  it("should", () => {
+  it("should always be true", () => {
     expect(true).toBeTruthy;
   });
 });
