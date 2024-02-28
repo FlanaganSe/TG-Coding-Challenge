@@ -16,14 +16,14 @@ export const HomeContent = () => {
     <div>
       <img src={img} alt={details} />
       <h1 className="text-3xl py-4">{name}</h1>
-      <div className="flex flex-row pt-6">
+      <div className="flex flex-col gap-4 pt-6 md:flex-row">
         <div className="flex-1">
           <h2>{details}</h2>
         </div>
         <div className="flex-1">
           <p>Features:</p>
           <ul>
-            {/* Turn the array into a string and replace underlines with spaces */}
+            {/* Turn array of amenities to string and replace underlines with spaces */}
             {amenities && (
               <li>Amenities: {amenities.join(", ").replaceAll("_", " ")}</li>
             )}
