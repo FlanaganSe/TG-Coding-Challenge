@@ -36,6 +36,14 @@ npm run dev
 - Golf Player SVG ([Sports Line Icons on Reshot](https://www.reshot.com/free-svg-icons/item/golf-player-BTSQDUZXYH/))
 - SVG to TSX ([React-SVGR](https://react-svgr.com/playground/))
 
+#### Scaling & Where to go from here
+
+- Creating UI components for reusable functionality (e.g. the select dropdown, text)
+- Add a router if it's a multipage application. For standard React apps, React Router is the de-facto standard
+- React-Query can be popular for querying and observing querying state
+- More unit testing. Integration and E2E testing with Cypress or another library
+- There are many additional directions, features, and additions depending on the plans for the app. Some may include i18n for translation, storybook, and more.
+
 #### Showcase
 
 ![](docs/desktop-complete.png)
